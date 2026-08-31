@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* ===================================================================
    JITHENDRA SAINAADH ARREPU — PORTFOLIO JAVASCRIPT
    =================================================================== */
@@ -221,7 +220,6 @@
   console.log('%cBuilt with HTML · CSS · JavaScript', 'color:#94a3b8;font-size:0.8rem;');
 
 })();
-=======
 /* ===================================================================
    JITHENDRA SAINAADH ARREPU — PORTFOLIO JAVASCRIPT
    =================================================================== */
@@ -444,4 +442,3 @@
   console.log('%cBuilt with HTML · CSS · JavaScript', 'color:#94a3b8;font-size:0.8rem;');
 
 })();
->>>>>>> 970be7c2d44387c522a27a9e9cc1a4d4bd15fa37
