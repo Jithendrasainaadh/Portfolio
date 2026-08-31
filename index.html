@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Jithendra Sainaadh Arrepu - CSE student at LPU building practical solutions through code." />
+  <title>Jithendra Sainaadh Arrepu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ────────────────────── NAV ────────────────────── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">JSA<span class="accent">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hackathons">Hackathons</a></li>
+      <li><a href="#workshops">Workshops</a></li>
+      <li><a href="#certifications">Certs</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ────────────────────── HERO ────────────────────── -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-ring">
+        <img src="assets/photo.jpg" alt="Jithendra Sainaadh Arrepu" class="hero-photo" id="heroPhoto"
+          onerror="this.style.display='none';document.getElementById('photoPlaceholder').style.display='flex';" />
+        <div class="photo-placeholder" id="photoPlaceholder">
+          <span class="placeholder-initials">JSA</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-text">
+      <p class="hero-greeting">Hello, I am</p>
+      <h1 class="hero-name">Jithendra Sainaadh<br /><span class="accent">Arrepu</span></h1>
+      <p class="hero-role">
+        <span class="typing-wrap">
+          <span class="typed" id="typedText"></span><span class="cursor">|</span>
+        </span>
+      </p>
+      <p class="hero-tagline">
+        I learn by building — writing code, experimenting with systems,<br />
+        and gradually turning ideas into working software.
+      </p>
+      <div class="hero-links">
+        <a href="https://linkedin.com/in/jithendra-sainaadh-arrepu" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Jithendrasainaadh" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          GitHub
+        </a>
+        <a href="mailto:jithendrasainaadharrepu@gmail.com" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          Email
+        </a>
+        <a href="assets/resume.pdf" target="_blank" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          Resume
+        </a>
+      </div>
+      <div class="scroll-hint"><div class="scroll-arrow"></div></div>
+    </div>
+  </div>
+  <div class="hero-bg-dots" aria-hidden="true"></div>
+</section>
+
+<!-- ────────────────────── ABOUT ────────────────────── -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">01 / About</span>
+      <h2 class="section-title">Who I Am</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I am a second-year (3rd Semester) Computer Science and Engineering student at Lovely Professional University, and I have come to understand something about myself early on: I learn best when there is a real problem in front of me and code on the screen.</p>
+        <p>My academic journey gave me the foundations — data structures, algorithms, databases, networks. But the real learning happened outside the classroom: building a full-stack community management system from scratch, experimenting with multilingual voice AI, tracking habits in a web app I actually use daily.</p>
+        <p>I am drawn to the intersection of practical software engineering and real human problems. Whether it is a gated community needing a digital backbone or a restaurant wanting AI that understands regional languages — I am interested in understanding the problem before reaching for a framework.</p>
+        <p>Right now I am focused on deepening my backend and systems knowledge, exploring AI applications, and contributing to projects that matter beyond the grade sheet.</p>
+        <div class="about-stats">
+          <div class="stat"><span class="stat-number" data-count="3">0</span><span class="stat-label">Real Projects</span></div>
+          <div class="stat"><span class="stat-number" data-count="2">0</span><span class="stat-label">Hackathons</span></div>
+          <div class="stat"><span class="stat-number" data-count="83" data-decimal="1">0</span><span class="stat-label">CGPA</span></div>
+          <div class="stat"><span class="stat-number" data-count="2">0</span><span class="stat-label">Certifications</span></div>
+        </div>
+      </div>
+      <div class="about-values">
+        <h3>How I Think</h3>
+        <div class="value-card">
+          <div class="value-icon">🔍</div>
+          <div><strong>Understand the problem first</strong><p>Before writing a line of code, I try to understand what is actually being asked and why it matters.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🛠️</div>
+          <div><strong>Build to learn</strong><p>Documentation only gets me so far. The real clarity comes when something is running and I can see what breaks.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📈</div>
+          <div><strong>Progress over perfection</strong><p>Ship a working version, learn from using it, then improve. A finished imperfect thing beats an unfinished ideal one.</p></div>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🌐</div>
+          <div><strong>Technology should be accessible</strong><p>Multilingual support, clear interfaces, offline-first design — I care about who actually gets to use what is built.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── EDUCATION ────────────────────── -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">02 / Education</span>
+      <h2 class="section-title">Academic Background</h2>
+    </div>
+    <div class="education-timeline">
+
+      <div class="edu-card edu-card--active reveal">
+        <div class="edu-card-header">
+          <div class="edu-meta">
+            <span class="edu-tag">B.Tech &middot; Current</span>
+            <span class="edu-year">2023 &mdash; 2027</span>
+          </div>
+          <div class="edu-cgpa">
+            <span class="cgpa-label">CGPA</span>
+            <span class="cgpa-value">8.3</span>
+          </div>
+        </div>
+        <h3>Bachelor of Technology</h3>
+        <h4>Computer Science &amp; Engineering</h4>
+        <p class="edu-institution">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Lovely Professional University &mdash; Phagwara, Punjab
+        </p>
+        <p class="edu-desc">Core curriculum spanning data structures and algorithms, object-oriented programming, database management, computer networks, operating systems and software engineering. Academic work consistently paired with personal projects that put theory into practice.</p>
+        <div class="edu-highlights">
+          <span>Data Structures &amp; Algorithms</span>
+          <span>Database Management</span>
+          <span>Computer Networks</span>
+          <span>Software Engineering</span>
+          <span>Operating Systems</span>
+          <span>Web Technologies</span>
+        </div>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-card-header">
+          <div class="edu-meta">
+            <span class="edu-tag">Class XII</span>
+            <span class="edu-year">Completed 2023</span>
+          </div>
+        </div>
+        <h3>Intermediate / Higher Secondary</h3>
+        <h4>Science &mdash; Physics, Chemistry, Mathematics</h4>
+        <p class="edu-institution">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          India
+        </p>
+        <p class="edu-desc">Strong foundation in Mathematics and Science that laid the groundwork for computational thinking, logical problem solving and the precision needed for engineering.</p>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-card-header">
+          <div class="edu-meta">
+            <span class="edu-tag">Higher Secondary</span>
+            <span class="edu-year">2024 &mdash; 2025</span>
+          </div>
+          <div class="edu-cgpa">
+            <span class="cgpa-label">Percentage</span>
+            <span class="cgpa-value">85%</span>
+          </div>
+        </div>
+        <h3>Neelkanth Vidyapeeth Residencial School</h3>
+        <h4>Hyderabad, Telangana</h4>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-card-header">
+          <div class="edu-meta">
+            <span class="edu-tag">Secondary</span>
+            <span class="edu-year">2022 &mdash; 2023</span>
+          </div>
+          <div class="edu-cgpa">
+            <span class="cgpa-label">Percentage</span>
+            <span class="cgpa-value">80.1%</span>
+          </div>
+        </div>
+        <h3>Neelkanth Vidyapeeth Residencial School</h3>
+        <h4>Hyderabad, Telangana</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ────────────────────── SKILLS ────────────────────── -->
+<section id="skills" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">03 / Skills</span>
+      <h2 class="section-title">What I Work With</h2>
+      <p class="section-subtitle">Skills backed by actual use in projects, coursework, or deliberate practice.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="skill-cat-header"><span class="skill-cat-icon">⚡</span><h3>Languages</h3></div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div><span class="skill-pct">85%</span></div>
+          <div class="skill-item"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div><span class="skill-pct">75%</span></div>
+          <div class="skill-item"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div><span class="skill-pct">65%</span></div>
+          <div class="skill-item"><span class="skill-name">C++</span><div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div><span class="skill-pct">60%</span></div>
+          <div class="skill-item"><span class="skill-name">HTML &amp; CSS</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div><span class="skill-pct">80%</span></div>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-header"><span class="skill-cat-icon">🗄️</span><h3>Databases</h3></div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div><span class="skill-pct">75%</span></div>
+          <div class="skill-item"><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div><span class="skill-pct">65%</span></div>
+          <div class="skill-item"><span class="skill-name">SQLite</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div><span class="skill-pct">80%</span></div>
+          <div class="skill-item"><span class="skill-name">SQLAlchemy ORM</span><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div><span class="skill-pct">70%</span></div>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-header"><span class="skill-cat-icon">🔧</span><h3>Frameworks &amp; Tools</h3></div>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-name">FastAPI</span><div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div><span class="skill-pct">78%</span></div>
+          <div class="skill-item"><span class="skill-name">REST APIs</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div><span class="skill-pct">80%</span></div>
+          <div class="skill-item"><span class="skill-name">JWT Auth</span><div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div><span class="skill-pct">72%</span></div>
+          <div class="skill-item"><span class="skill-name">Git &amp; GitHub</span><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div><span class="skill-pct">82%</span></div>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="skill-cat-header"><span class="skill-cat-icon">🧠</span><h3>Concepts &amp; Domains</h3></div>
+        <div class="skill-tags">
+          <span>Role-Based Access Control</span>
+          <span>PWA Development</span>
+          <span>Speech-to-Text / TTS</span>
+          <span>AI Voice Integration</span>
+          <span>Data Structures</span>
+          <span>Algorithms</span>
+          <span>OOP</span>
+          <span>Cybersecurity Fundamentals</span>
+          <span>Machine Learning (learning)</span>
+          <span>Multilingual Systems</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── PROJECTS ────────────────────── -->
+<section id="projects" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">04 / Projects</span>
+      <h2 class="section-title">What I Have Built</h2>
+      <p class="section-subtitle">Each project started with a real problem. These are the solutions I built to solve them.</p>
+    </div>
+
+    <!-- Project 1 -->
+    <article class="project-card reveal">
+      <div class="project-number">01</div>
+      <div class="project-content">
+        <div class="project-header">
+          <div class="project-title-block">
+            <h3 class="project-title">Gated Community Management System</h3>
+            <div class="project-tech-row">
+              <span class="tech-badge">FastAPI</span>
+              <span class="tech-badge">SQLAlchemy</span>
+              <span class="tech-badge">SQLite</span>
+              <span class="tech-badge">HTML/CSS/JS</span>
+              <span class="tech-badge">JWT</span>
+              <span class="tech-badge">PWA</span>
+            </div>
+          </div>
+          <a href="https://github.com/Jithendrasainaadh/GATED-COMMUNITY-MANAGEMENT-SYSTEM" target="_blank" rel="noopener" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-story">
+          <div class="story-block">
+            <span class="story-label">The Problem</span>
+            <p>Residential communities struggle with fragmented communication — notices go unread, visitor logs are manual, polls happen over WhatsApp, and property listings have no organized system. Residents and admins waste time on coordination that should be automatic.</p>
+          </div>
+          <div class="story-block">
+            <span class="story-label">My Solution</span>
+            <p>A full-stack web application that gives gated communities a single digital platform. Admins manage the community; residents interact with it. Every feature was designed around actual community workflows, not abstract CRUD operations.</p>
+          </div>
+        </div>
+        <div class="project-features">
+          <h4>Key Features</h4>
+          <div class="features-grid">
+            <div class="feature-item"><span class="feature-icon">🔐</span><span>JWT Authentication + Role-Based Access Control</span></div>
+            <div class="feature-item"><span class="feature-icon">💬</span><span>Resident-to-Resident Messaging System</span></div>
+            <div class="feature-item"><span class="feature-icon">📊</span><span>Community Polls and Voting</span></div>
+            <div class="feature-item"><span class="feature-icon">🏠</span><span>Property Listings Module</span></div>
+            <div class="feature-item"><span class="feature-icon">🔔</span><span>Real-time Notifications</span></div>
+            <div class="feature-item"><span class="feature-icon">🌍</span><span>Multilingual PWA (offline-capable)</span></div>
+          </div>
+        </div>
+        <div class="project-learning">
+          <span class="story-label">What I Learned</span>
+          <p>Building this taught me what "full-stack" actually means in practice — not just front end and back end, but thinking about authentication flows, database schema design, API contract design, and UX all at once. The multilingual PWA requirement pushed me to understand service workers and internationalization beyond theory.</p>
+        </div>
+        <img src="assets/projects/gcms/screenshot.png" alt="Gated Community Management System Screenshot" style="width:100%; border-radius:12px; border:1px solid var(--clr-border);" />
+      </div>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-card project-card--alt reveal">
+      <div class="project-number">02</div>
+      <div class="project-content">
+        <div class="project-header">
+          <div class="project-title-block">
+            <h3 class="project-title">AI Voice Receptionist</h3>
+            <div class="project-tech-row">
+              <span class="tech-badge">Speech-to-Text</span>
+              <span class="tech-badge">Text-to-Speech</span>
+              <span class="tech-badge">AI Conversation</span>
+              <span class="tech-badge">Telephony API</span>
+              <span class="tech-badge">Backend APIs</span>
+              <span class="tech-badge">Database</span>
+            </div>
+          </div>
+          <a href="https://github.com/Jithendrasainaadh" target="_blank" rel="noopener" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-story">
+          <div class="story-block">
+            <span class="story-label">The Problem</span>
+            <p>Small restaurants and local businesses in India often lose customers during peak hours because phone calls go unanswered. Hiring additional staff only for call handling is expensive. Existing AI solutions do not understand regional languages naturally.</p>
+          </div>
+          <div class="story-block">
+            <span class="story-label">My Solution</span>
+            <p>An AI-powered voice receptionist that handles incoming calls, understands spoken regional languages, takes orders naturally through conversation, and confirms details — all without a human agent on the line.</p>
+          </div>
+        </div>
+        <div class="project-features">
+          <h4>Key Features</h4>
+          <div class="features-grid">
+            <div class="feature-item"><span class="feature-icon">🎙️</span><span>Multilingual Speech Recognition (regional languages)</span></div>
+            <div class="feature-item"><span class="feature-icon">🤖</span><span>AI-powered Natural Conversation Flow</span></div>
+            <div class="feature-item"><span class="feature-icon">🔊</span><span>Natural-sounding Text-to-Speech Responses</span></div>
+            <div class="feature-item"><span class="feature-icon">📞</span><span>Telephony Integration for Real Calls</span></div>
+            <div class="feature-item"><span class="feature-icon">📦</span><span>Real-time Order Processing and Database Storage</span></div>
+            <div class="feature-item"><span class="feature-icon">🌐</span><span>Backend API for Business Dashboard</span></div>
+          </div>
+        </div>
+        <div class="project-learning">
+          <span class="story-label">What I Learned</span>
+          <p>This project exposed me to challenges I had not anticipated — regional language nuance in speech recognition, managing latency in voice pipelines, and designing conversation flows that feel natural rather than scripted. It also showed me that AI integration is as much about the system design around the AI as the AI itself.</p>
+        </div>
+        <div class="screenshot-placeholder" style="justify-content:center; text-align:center;"><span>?? Work in Progress (Ongoing Project) ??</span></div>
+      </div>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project-card reveal">
+      <div class="project-number">03</div>
+      <div class="project-content">
+        <div class="project-header">
+          <div class="project-title-block">
+            <h3 class="project-title">Habit Tracker</h3>
+            <div class="project-tech-row">
+              <span class="tech-badge">HTML/CSS</span>
+              <span class="tech-badge">JavaScript</span>
+              <span class="tech-badge">Local Storage</span>
+              <span class="tech-badge">Responsive Design</span>
+            </div>
+          </div>
+          <a href="hhttps://github.com/Jithendrasainaadh/Habit-tracker" target="_blank" rel="noopener" class="proj-link">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            View on GitHub
+          </a>
+        </div>
+        <div class="project-story">
+          <div class="story-block">
+            <span class="story-label">The Problem</span>
+            <p>Most habit apps are over-engineered or require an account before you can try them. I wanted something lightweight, private, and immediately useful — where the focus is the habit, not the app.</p>
+          </div>
+          <div class="story-block">
+            <span class="story-label">My Solution</span>
+            <p>A clean, browser-based habit tracker that works without a backend or account. Create habits, check them off daily, see streaks build up, and understand patterns through simple visual data.</p>
+          </div>
+        </div>
+        <div class="project-features">
+          <h4>Key Features</h4>
+          <div class="features-grid">
+            <div class="feature-item"><span class="feature-icon">✅</span><span>Habit Creation and Daily Check-off</span></div>
+            <div class="feature-item"><span class="feature-icon">🔥</span><span>Streak and Consistency Tracking</span></div>
+            <div class="feature-item"><span class="feature-icon">📱</span><span>Fully Responsive (mobile-first)</span></div>
+            <div class="feature-item"><span class="feature-icon">🔒</span><span>Private by Design — data stays in the browser</span></div>
+          </div>
+        </div>
+        <div class="project-learning">
+          <span class="story-label">What I Learned</span>
+          <p>Small projects teach different lessons. This one taught me about user experience constraints — how much state management is needed even for a simple application, and why consistent data modeling matters even in a localStorage context.</p>
+        </div>
+        <img src="assets/projects/habit/screenshot.png" alt="Habit Tracker Screenshot" style="width:100%; border-radius:12px; border:1px solid var(--clr-border);" />
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ────────────────────── HACKATHONS ────────────────────── -->
+<section id="hackathons" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">05 / Hackathons</span>
+      <h2 class="section-title">Competitive Experiences</h2>
+      <p class="section-subtitle">Hackathons taught me that building under pressure, as a team, with a time limit, is a completely different skill from building alone.</p>
+    </div>
+    <div class="hackathon-grid">
+
+      <div class="hackathon-card reveal">
+        <div class="hackathon-badge">
+          <span class="hackathon-year">Second Hackathon</span>
+          <span class="hackathon-num">02</span>
+        </div>
+        <div class="hackathon-body">
+          <h3>Sidecars Project</h3>
+          <p class="hackathon-date">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Hackathon Project
+          </p>
+          <div class="hackathon-detail">
+            <span class="detail-label">Project Goal</span>
+            <p>The project was about making sidecars which should be common for every device.</p>
+          </div>
+          <div class="hackathon-detail">
+            <span class="detail-label">Our Experience</span>
+            <p>Worked on Sidecars for more than 4 hours, eventually discovering that the technical complexity was too high for our current beginner level.</p>
+          </div>
+          <div class="hackathon-detail">
+            <span class="detail-label">Key Takeaway</span>
+            <p>Sometimes realizing a project's feasibility limit is a valuable lesson in itself. We learned to better gauge project scope and technical requirements.</p>
+          </div>
+        </div>
+      </div>
+          <div class="hackathon-detail">
+            <span class="detail-label">Key Takeaway</span>
+            <p class="placeholder-text">[ What did you learn? ]</p>
+          </div>
+          <div class="screenshot-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Add photo/certificate to <code>assets/hackathons/h2/</code></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── WORKSHOPS ────────────────────── -->
+<section id="workshops" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">06 / Workshops</span>
+      <h2 class="section-title">Learning Experiences</h2>
+    </div>
+    <div class="workshop-list">
+
+      <div class="workshop-card reveal">
+        <div class="workshop-icon-wrap"><span class="workshop-icon">🔒</span></div>
+        <div class="workshop-content">
+          <div class="workshop-header">
+            <div>
+              <h3>HackEthics (Ethical Hacking Workshop)</h3>
+              <p class="workshop-organizer">Spirit Organization & Microsoft Learn Student Ambassadors</p>
+            </div>
+            <span class="workshop-date">4 Days</span>
+          </div>
+          <div class="workshop-topics">
+            <h4>Topics Covered</h4>
+            <div class="skill-tags">
+              <span>Network Security Fundamentals</span>
+              <span>Threat Identification</span>
+              <span>Security Best Practices</span>
+              <span>Real-world Attack Simulations</span><span>Hands-on Tools</span>
+            </div>
+          </div>
+          <div class="workshop-takeaway">
+            <span class="story-label">Key Learning</span>
+            <p>Gained hands-on experience with ethical hacking tools and understood the mechanics of real-world attack simulations to better build secure software.</p>
+          </div>
+          <a href="assets/workshops/cybersecurity/certificate.pdf" target="_blank" class="btn btn-outline" style="margin-top:1rem; width:100%; justify-content:center;">View Certificate (PDF)</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── CERTIFICATIONS ────────────────────── -->
+<section id="certifications" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">07 / Certifications</span>
+      <h2 class="section-title">Verified Learning</h2>
+    </div>
+    <div class="cert-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-icon-wrap"><span class="cert-org-icon">✨</span></div>
+        <div class="cert-content">
+          <div class="cert-org-tag">Outskill</div>
+          <h3>Generative AI Mastermind</h3>
+          <p class="cert-date">2024</p>
+          <div class="cert-topics">
+            <span>Generative AI Fundamentals</span>
+            <span>Large Language Models</span>
+            <span>AI Application Development</span>
+            <span>Prompt Engineering</span>
+          </div>
+          <a href="assets/certs/genai/certificate.pdf" target="_blank" class="btn btn-outline" style="margin-top:1.25rem; width:100%; justify-content:center;">View Certificate (PDF)</a>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon-wrap"><span class="cert-org-icon">🎓</span></div>
+        <div class="cert-content">
+          <div class="cert-org-tag">Udemy</div>
+          <h3>Data Science, ML, DL &amp; NLP Bootcamp</h3>
+          <p class="cert-date">2024</p>
+          <div class="cert-topics">
+            <span>Machine Learning</span>
+            <span>Deep Learning</span>
+            <span>Natural Language Processing</span>
+            <span>Data Science Workflows</span>
+            <span>Python for Data Science</span>
+          </div>
+          <a href="assets/certs/ds-bootcamp/certificate.pdf" target="_blank" class="btn btn-outline" style="margin-top:1.25rem; width:100%; justify-content:center;">View Certificate (PDF)</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── ACHIEVEMENTS ────────────────────── -->
+<section id="achievements" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">08 / Achievements</span>
+      <h2 class="section-title">Problem Solving &amp; Growth</h2>
+    </div>
+    <div class="achievements-grid">
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">⚡</div>
+        <div class="achievement-content">
+          <h3>LeetCode</h3>
+          <p class="achievement-sub">Competitive Programming Practice</p>
+          <p>Consistently practicing data structures and algorithm problems, with a focus on building problem-solving fluency rather than just accumulating solved counts.</p>
+          <a href="https://leetcode.com/jithendra-sainaadh" target="_blank" rel="noopener" class="achievement-link">View LeetCode Profile &#8594;</a>
+        </div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🏆</div>
+        <div class="achievement-content">
+          <h3>Hackathon Participant</h3>
+          <p class="achievement-sub">2&times; First-Year Participation</p>
+          <p>Competed in two hackathons during the first year of university, gaining early experience with team development, rapid prototyping and presenting technical solutions.</p>
+        </div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🎯</div>
+        <div class="achievement-content">
+          <h3>Academic Performance</h3>
+          <p class="achievement-sub">CGPA 8.3 / 10</p>
+          <p>Maintaining strong academic performance in Computer Science while simultaneously investing significant time in self-directed practical projects.</p>
+        </div>
+      </div>
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">📌</div>
+        <div class="achievement-content">
+          <h3>[ Add More Achievements ]</h3>
+          <p class="achievement-sub">Placeholder</p>
+          <p>Add other achievements, club positions, recognitions or competition results here as you accumulate them.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── COMMUNITY ────────────────────── -->
+<section id="community" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">09 / Community</span>
+      <h2 class="section-title">Beyond the Classroom</h2>
+      <p class="section-subtitle">Learning should extend beyond code. Community work and social problem-solving inform how I think about technology.</p>
+    </div>
+    <div class="community-card reveal">
+      <div class="community-header">
+        <div class="community-icon-wrap"><span class="community-icon">🌱</span></div>
+        <div>
+          <h3>Environmental Awareness Campaign</h3>
+          <p class="community-context">Indus, Hanuma, &amp; Shastra Schools</p>
+        </div>
+      </div>
+      <div class="community-story">
+        <div class="story-col">
+          <div class="story-block"><span class="story-label">Context</span><p>Organized an Environmental Awareness Campaign in Suryapet, Telangana, targeting 500&ndash;600 school students from Classes 3 to 10 across three different schools (Indus School, Hanuma High School, and Shastra School) as part of a Community Development Project.</p></div>
+          <div class="story-block"><span class="story-label">Problem Identified</span><p>Observed a gap between students' theoretical knowledge of environmental issues and practical action. Students needed to understand how their individual choices and daily habits contribute to larger environmental problems.</p></div>
+          <div class="story-block"><span class="story-label">Work Performed</span><p>Approached school authorities to organize awareness sessions. Conducted interactive presentations to make environmental concepts relatable for different age groups, and mobilized students to participate in the Times Critical Thinking Championship (TCTC) Online Quiz.</p></div>
+        </div>
+        <div class="story-col">
+          <div class="story-block"><span class="story-label">Impact</span><p>Successfully delivered direct environmental awareness to over 500 students, encouraging them to discuss and connect environmental responsibility to their everyday actions outside of a strict academic environment.</p></div>
+          <div class="story-block"><span class="story-label">Reflection</span><p>Learned that community work requires persistence and flexibility, especially when facing institutional roadblocks. The experience significantly improved my communication skills across different age groups and boosted my confidence in organizing and public speaking.</p></div>
+        </div>
+      </div>
+      <div class="community-photos">
+        <img src="assets/community/photo1.jpg" alt="Teaching students during environmental awareness campaign" style="width:100%; border-radius:12px; border:1px solid var(--clr-border);" />
+      </div>
+      <div class="screenshot-placeholder">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        <span>Add photographs and evidence to <code>assets/community/</code></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── RESEARCH ────────────────────── -->
+<section id="research" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">10 / Exploration</span>
+      <h2 class="section-title">Research &amp; Curiosity</h2>
+      <p class="section-subtitle">Areas I am actively reading, experimenting in, or exploring — deliberate intellectual curiosity rather than formal publications.</p>
+    </div>
+    <div class="research-grid">
+      <div class="research-card reveal">
+        <div class="research-icon">🤖</div>
+        <h3>AI in Everyday Applications</h3>
+        <p>Interested in how AI can be embedded into practical, regional, and low-connectivity contexts — not just high-end research environments. The Voice Receptionist project is an early experiment in this direction.</p>
+        <div class="research-status"><span class="status-badge status-active">Active Exploration</span></div>
+      </div>
+      <div class="research-card reveal">
+        <div class="research-icon">🌐</div>
+        <h3>Multilingual Technology Design</h3>
+        <p>Why do most software systems default to English, even in regions where regional languages dominate? Exploring design patterns, linguistic challenges and technical approaches for genuinely multilingual software.</p>
+        <div class="research-status"><span class="status-badge status-active">Active Exploration</span></div>
+      </div>
+      <div class="research-card reveal">
+        <div class="research-icon">🔐</div>
+        <h3>Cybersecurity &amp; Secure Systems</h3>
+        <p>Following hands-on exposure through a cybersecurity workshop, increasingly curious about how systems are compromised and how secure-by-design principles can be applied from the ground up during development.</p>
+        <div class="research-status"><span class="status-badge status-learning">Learning Phase</span></div>
+      </div>
+      <div class="research-card reveal">
+        <div class="research-icon">📊</div>
+        <h3>Data-Driven Decision Making</h3>
+        <p>Exploring how data science and machine learning techniques can augment real-world decisions — particularly in contexts where data quality is inconsistent and solutions must be robust to that reality.</p>
+        <div class="research-status"><span class="status-badge status-learning">Learning Phase</span></div>
+      </div>
+    </div>
+    <div class="research-note reveal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <p>If a research paper or formal collaboration emerges from any of these areas, it will be added here with full details. Until then, this section reflects genuine curiosity and structured self-learning.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── RESUME ────────────────────── -->
+<section id="resume" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">11 / Resume</span>
+      <h2 class="section-title">Curriculum Vitae</h2>
+    </div>
+    <div class="resume-layout reveal">
+      <div class="resume-preview-wrap">
+        <div class="resume-mock">
+          <div class="rm-header">
+            <div class="rm-name-block">
+              <div class="rm-name-bar"></div>
+              <div class="rm-sub-bar"></div>
+            </div>
+            <div class="rm-contact-bars">
+              <div class="rm-c-bar"></div>
+              <div class="rm-c-bar" style="width:60%"></div>
+            </div>
+          </div>
+          <div class="rm-divider"></div>
+          <div class="rm-section">
+            <div class="rm-section-title"></div>
+            <div class="rm-line"></div>
+            <div class="rm-line" style="width:70%"></div>
+            <div class="rm-line"></div>
+          </div>
+          <div class="rm-section">
+            <div class="rm-section-title"></div>
+            <div class="rm-line" style="width:55%"></div>
+            <div class="rm-line"></div>
+            <div class="rm-line" style="width:80%"></div>
+          </div>
+          <div class="rm-section">
+            <div class="rm-section-title"></div>
+            <div class="rm-line"></div>
+            <div class="rm-line" style="width:65%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="resume-actions">
+        <h3>Jithendra Sainaadh Arrepu</h3>
+        <p class="resume-desc">B.Tech Computer Science &amp; Engineering &middot; LPU &middot; CGPA 8.3<br />Full-stack developer with a focus on practical, problem-driven development.</p>
+        <div class="resume-btns">
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="assets/resume.pdf" target="_blank" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Online
+          </a>
+        </div>
+        <div class="resume-links-row">
+          <a href="https://linkedin.com/in/jithendra-sainaadh-arrepu" target="_blank" rel="noopener" class="resume-soc-link">LinkedIn</a>
+          <a href="https://github.com/Jithendrasainaadh" target="_blank" rel="noopener" class="resume-soc-link">GitHub</a>
+          <a href="mailto:jithendrasainaadharrepu@gmail.com" class="resume-soc-link">Email</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── CONTACT ────────────────────── -->
+<section id="contact" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">12 / Contact</span>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">Whether it's about a project, an opportunity, a collaboration, or just a conversation — my inbox is open.</p>
+    </div>
+    <div class="contact-layout reveal">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+          </div>
+          <div>
+            <span class="contact-label">Email</span>
+            <a href="mailto:jithendrasainaadharrepu@gmail.com" class="contact-value">jithendrasainaadharrepu@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </div>
+          <div>
+            <span class="contact-label">LinkedIn</span>
+            <a href="https://linkedin.com/in/jithendra-sainaadh-arrepu" target="_blank" rel="noopener" class="contact-value">linkedin.com/in/jithendra-sainaadh-arrepu</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <div>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/Jithendrasainaadh" target="_blank" rel="noopener" class="contact-value">github.com/jithendra-sainaadh</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Lovely Professional University, Punjab</span>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="contactName">Name</label>
+          <input type="text" id="contactName" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Email</label>
+          <input type="email" id="contactEmail" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="contactSubject">Subject</label>
+          <input type="text" id="contactSubject" placeholder="What is this about?" />
+        </div>
+        <div class="form-group">
+          <label for="contactMessage">Message</label>
+          <textarea id="contactMessage" rows="5" placeholder="Tell me more..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Send Message
+        </button>
+        <p class="form-note">Or email directly at <a href="mailto:jithendrasainaadharrepu@gmail.com">jithendrasainaadharrepu@gmail.com</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ────────────────────── FOOTER ────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#hero" class="nav-logo footer-logo">JSA<span class="accent">.</span></a>
+      <p>Jithendra Sainaadh Arrepu</p>
+      <p class="footer-sub">CSE &middot; Lovely Professional University</p>
+    </div>
+    <div class="footer-links-grid">
+      <div>
+        <h4>Portfolio</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="#hackathons">Hackathons</a></li>
+          <li><a href="#workshops">Workshops</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#research">Exploration</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://linkedin.com/in/jithendra-sainaadh-arrepu" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/Jithendrasainaadh" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="mailto:jithendrasainaadharrepu@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Built with care &middot; &copy; 2026 Jithendra Sainaadh Arrepu</p>
+  </div>
+</footer>
+
+<a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="18 15 12 9 6 15"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
